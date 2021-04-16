@@ -12,19 +12,24 @@ namespace SDLFramework {
 	public:
 		static const short SCREEN_WIDTH = 1024;
 		static const short SCREEN_HEIGHT = 896;
-		const char * WINDOW_TITLE = "Galaga";
+		const char * WINDOW_TITLE = "Asteroids";
+
+		
 
 	private:
 		static Graphics * sInstance;
 		static bool sInitialized;
 
 		SDL_Window * mWindow;
-		SDL_Renderer * mRenderer;
+		SDL_Renderer* mRenderer;
+		
 
 	public:
 		static Graphics * Instance();
 		static void Release();
 		static bool Initialized();
+
+		
 
 		SDL_Texture * LoadTexture(std::string path);
 		SDL_Texture * CreateTextTexture(TTF_Font * font, std::string text, SDL_Color color);

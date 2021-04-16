@@ -11,6 +11,11 @@ StartScreen::StartScreen() {
 
 	mLogo->Position(Graphics::SCREEN_WIDTH * 0.5f, Graphics::SCREEN_HEIGHT * 0.32f);
 
+	mA = new LineLetters('a');
+	
+	
+	
+	
 	// play mode entities
 	mPlayModes = new GameEntity(Graphics::SCREEN_WIDTH * 0.5f, Graphics::SCREEN_HEIGHT * 0.55f);
 	mOnePlayerMode = new Texture("Press Space To Play ", "emulogic.ttf", 32, { 230, 230, 230 });
@@ -73,5 +78,6 @@ void StartScreen::Update() {
 
 void StartScreen::Render() {
 	mLogo->Render();
+	mA->Render();
 	mOnePlayerMode->Render();
 }

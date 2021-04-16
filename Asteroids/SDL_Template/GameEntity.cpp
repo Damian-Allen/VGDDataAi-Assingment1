@@ -33,6 +33,14 @@ namespace SDLFramework {
 		return mParent->Position(World) + Vector2(rotPosition.x * parentScale.x, rotPosition.y * parentScale.y);
 	}
 
+	float GameEntity::Position(char point) {
+		if (point == 'x') {
+			return mPosition.x;
+		} else if (point == 'y') {
+			return mPosition.y;
+		} 
+	}
+
 	void GameEntity::Rotation(float rot) {
 		mRotation = rot;
 

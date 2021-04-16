@@ -25,6 +25,7 @@ namespace SDLFramework {
 		void Position(float x, float y);
 		void Position(const Vector2 & pos);
 		Vector2 Position(Space space = World);
+		float Position(char point);
 
 		void Rotation(float rot);
 		float Rotation(Space space = World);

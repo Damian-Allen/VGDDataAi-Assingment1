@@ -2,6 +2,7 @@
 
 #include "InputManager.h"
 #include "BackgroundStars.h"
+#include "LineLetters.h"
 
 using namespace SDLFramework;
 
@@ -11,8 +12,10 @@ private:
 	Timer * mTimer;
 	InputManager * mInput;
 
+
 	// Logo Entities
 	Texture * mLogo;
+	LineLetters * mA;
 
 	// Play Mode Entities
 	GameEntity * mPlayModes;
